@@ -28,7 +28,7 @@ body {
     background-color: var(--main-bg-color);
     color: var(--main);
     font-family: 'Martian Mono', monospace;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 [class^="icon-"], [class*=" icon-"] {
     display: inline-block;
