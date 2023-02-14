@@ -30,23 +30,27 @@ body {
     font-family: 'Martian Mono', monospace;
     overflow: hidden;
 }
-
 [class^="icon-"], [class*=" icon-"] {
     display: inline-block;
     width: 100%;
 }
+.github { color: var(--secondary-main ); }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 /* Headers */
 header h1, header h2, section h1, section h2 { text-align: center; margin: 0; padding: 0 0 0.1em 0; }
 header h1 { color: var(--main); font-weight: var(--font-weight-bold); font-size: 3em; }
 header h2 { color: var(--accent); font-weight: var(--font-weight-light); font-size: 1.5em; }
-header .fa, section .fa { 
+header [class*=" icon-"], section [class*=" icon-"] { 
     color: var(--accent); 
     font-size: 2em; 
     text-align: center; 
     transition: font-size var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out; 
 }
-header .fa:hover, section .fa:hover {
+header [class*=" icon-"]:hover, section [class*=" icon-"]:hover {
     font-size: 3em; 
     color: var(--main); 
     cursor: pointer;
@@ -58,9 +62,7 @@ section h1 { color: var(--main); font-weight: var(--font-weight-bold); font-size
 section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-size: 1.25em; }
 
 /* Particle.js */
-.particles-js-canvas-el{
-    position: absolute;
-}
+.particles-js-canvas-el{ position: absolute; }
 #particles-js {
     width: 100%;
     height: 100%;
@@ -86,10 +88,20 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
     justify-content: center;
     align-content: center;
 }
-.grid-item {
-    max-width: 70vw;
+.grid-item { max-width: 70vw; }
+
+/* Project row */
+.projects-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
 }
+.project-item { max-width: 40vw; margin: 0 4em 0 4em;}
 
 #landing {grid-row: 1;}
 #what-i-do {grid-row: 2;}
 #favourite-projects {grid-row: 3;}
+#whython {grid-column: 1;}
+#video-to-ascii {grid-column: 2;}
