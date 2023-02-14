@@ -46,7 +46,7 @@ header .fa, section .fa {
     text-align: center; 
     transition: font-size var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out; 
 }
-header .fa, section .fa:hover {
+header .fa:hover, section .fa:hover {
     font-size: 3em; 
     color: var(--main); 
     cursor: pointer;
