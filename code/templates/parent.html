@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian Jones - {% block title %}{% endblock %}</title>
+    <title>Julian Jones</title>
 
     <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/main.css') }}">
     <script src="{{ url_for('static', filename='js/buttons.js') }}"></script>
@@ -25,11 +25,7 @@
         Yes I made this all from scratch with html/css/js. No frameworks were used. No I do not hate myself.
      -->
     <div class="main-grid">
-        <div id="particles-js">
-            <div class="back-to-top">
-                <a href="#landing"><i class="fa fa-angle-double-up icon-angle-double-up"></i></a>
-            </div>
-        </div> 
+        <div id="particles-js"></div> 
         {% block content %}
         {% endblock %}
     </div>  

@@ -12,7 +12,7 @@
         <header class="grid-item">
             <h1>WELCOME</h1>
             <h2>I'm Julian</h2>
-            <a href="#what-i-do"><i class="fa fa-caret-down icon-caret-down"></i></a>  
+            <a href="#what-i-do" onclick="showBackToTop()"><i class="fa fa-caret-down icon-caret-down"></i></a>  
         </header>
     </div>
 
@@ -36,7 +36,7 @@
                 <h2>Whython is an almost fully customizable language written in python, its syntax is based of Visual Basic. This is a project language written for fun which allows you to create your own language; from pseudocode syntax to emoji code, the choice is yours.</h2>  
             </section>
             <section class="project-item" id="video-to-ascii">
-                <h1>VIDEO TO ASCII&hairsp;<a class="github" href="https://github.com/nexinfinite/video-to-ascii" target="_blank"><i class="fa fa-github"></i></a></h1>
+                <h1>VIDEO TO ASCII&hairsp;<a class="github" href="https://github.com/nexinfinite/videotoascii" target="_blank"><i class="fa fa-github"></i></a></h1>
                 <h2>Video to ASCII was a project written over a weekend which takes a YouTube video and converts the output the ASCII art in a bash terminal in real time. It was written in Python and had some updates later on which pushed real time rendering of your monitor.</h2>  
             </section>
         </div>
@@ -45,5 +45,9 @@
             <h2>Take a look at competitions I've attended and awards I have won</h2>
             <a href="#landing"><i class="fa fa-caret-down icon-caret-down"></i></a>  
         </section>
+
+        <div class="back-to-top" id="back-to-top" hidden>
+            <a href="#landing" onclick="hideBackToTop()"><i class="fa fa-angle-double-up"></i></a>
+        </div>
     </div>
 {% endblock %}

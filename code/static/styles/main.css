@@ -28,17 +28,14 @@ body {
     background-color: var(--main-bg-color);
     color: var(--main);
     font-family: 'Martian Mono', monospace;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 [class^="icon-"], [class*=" icon-"] {
     display: inline-block;
     width: 100%;
 }
 a { color: var(--secondary-main ); }
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
 
 /* Headers */
 header h1, header h2, section h1, section h2 { text-align: center; margin: 0; padding: 0 0 0.1em 0; }
@@ -107,10 +104,13 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
 #video-to-ascii {grid-column: 2;}
 
 /* Back to top */
-.back-to-top {
-    position: relative;
+.back-to-top {  
+    position: fixed;
     top: 0.2em;
     right: 1em;
     float: right; 
-    font-size: 2em;   
+    font-size: 2em;
+    z-index: 1;   
+    transition: color var(--transition-duration) ease-in-out; 
 }
+.back-to-top a:hover { color: var(--main); cursor: pointer; }
