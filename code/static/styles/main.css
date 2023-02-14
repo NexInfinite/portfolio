@@ -54,8 +54,8 @@ header .fa:hover, section .fa:hover {
 
 /* Sections */
 section { padding-bottom: 2em; }
-section h1 { color: var(--main); font-weight: var(--font-weight-bold); font-size: 2.5em; }
-section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-size: 1.5em; }
+section h1 { color: var(--main); font-weight: var(--font-weight-bold); font-size: 2em; }
+section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-size: 1.25em; }
 
 /* Particle.js */
 .particles-js-canvas-el{
@@ -92,3 +92,4 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
 
 #landing {grid-row: 1;}
 #what-i-do {grid-row: 2;}
+#favourite-projects {grid-row: 3;}
