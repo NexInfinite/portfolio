@@ -6,5 +6,5 @@ index = Blueprint('index', __name__)
 @index.route("/", methods=["GET"])
 @limiter.limit("3 per second")
 def show():
-    """Home screen for shef tickets"""
-    return render_template("lander.html")
+    """Home screen for portfolio"""
+    return render_template("index.html")

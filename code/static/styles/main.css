@@ -11,6 +11,11 @@
 
     /* Transition Durations */
     --transition-duration: 0.25s;
+
+    /* Font weights */
+    --font-weight-light: 200;
+    --font-weight-normal: 500;
+    --font-weight-bold: 900;
 }
 
 /* General */
@@ -32,21 +37,25 @@ body {
 }
 
 /* Headers */
-header { background-color: var(--main-bg-color); }
-header h1,h2 { text-align: center; margin: 0; padding: 0 0 0.1em 0; }
-header h1 { color: var(--main); font-weight: 900; font-size: 3em; }
-header h2 { color: var(--accent); font-weight: 200; font-size: 1.5em; }
-header .fa { 
+header h1, header h2, section h1, section h2 { text-align: center; margin: 0; padding: 0 0 0.1em 0; }
+header h1 { color: var(--main); font-weight: var(--font-weight-bold); font-size: 3em; }
+header h2 { color: var(--accent); font-weight: var(--font-weight-light); font-size: 1.5em; }
+header .fa, section .fa { 
     color: var(--accent); 
     font-size: 2em; 
     text-align: center; 
     transition: font-size var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out; 
 }
-header .fa:hover {
+header .fa, section .fa:hover {
     font-size: 3em; 
     color: var(--main); 
     cursor: pointer;
 }
+
+/* Sections */
+section { padding-bottom: 2em; }
+section h1 { color: var(--main); font-weight: var(--font-weight-bold); font-size: 2.5em; }
+section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-size: 1.5em; }
 
 /* Particle.js */
 .particles-js-canvas-el{
