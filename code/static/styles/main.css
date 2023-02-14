@@ -1,0 +1,36 @@
+/*
+    Color schemes: https://visme.co/blog/website-color-schemes/
+*/
+:root {
+    --main-bg-color: #0b0c10;
+    --secondary-bg-color: #1f2833;
+    --accent: #c5c6c7;
+    --secondary-main: #45a29e;
+    --main: #66fcf1;
+}
+  
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main);
+    font-family: 'Martian Mono', monospace;
+}
+
+header h1,h2 { margin: 0; text-align: center; }
+header h1 { color: var(--main); font-weight: 900; }
+header h2 { color: var(--accent); font-weight: 200; }
+header .fa { color: var(--accent); font-size: 2em; text-align: center; }
+
+.center {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
