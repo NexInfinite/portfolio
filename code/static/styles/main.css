@@ -10,17 +10,20 @@
     --main: #66fcf1;
 
     /* Transition Durations */
-    --transition-duration: 0.5s;
+    --transition-duration: 0.25s;
 }
 
 /* General */
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     background-color: var(--main-bg-color);
     color: var(--main);
     font-family: 'Martian Mono', monospace;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -29,9 +32,10 @@ body {
 }
 
 /* Headers */
-header h1,h2 { text-align: center; }
-header h1 { color: var(--main); font-weight: 900; }
-header h2 { color: var(--accent); font-weight: 200; }
+header { background-color: var(--main-bg-color); }
+header h1,h2 { text-align: center; margin: 0; padding: 0 0 0.1em 0; }
+header h1 { color: var(--main); font-weight: 900; font-size: 3em; }
+header h2 { color: var(--accent); font-weight: 200; font-size: 1.5em; }
 header .fa { 
     color: var(--accent); 
     font-size: 2em; 
@@ -45,14 +49,27 @@ header .fa:hover {
 }
 
 /* Grids */
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 60px;
-    grid-gap: 20px;
-  }
-.grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.particles-js-canvas-el{
+    position: absolute;
 }
+.main-grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+}
+.grid-row {
+    z-index: 1;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.grid-item {
+    max-width: 70vw;
+}
+
+#landing {grid-row: 1;}
+#what-i-do {grid-row: 2;}

@@ -20,12 +20,11 @@
     {% endblock %}
 </head>
 <body onload="">
-    <div id="particles-js">
-        <div id="content">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </div>
+    <div class="main-grid">
+        <div id="particles-js"></div> 
+        {% block content %}
+        {% endblock %}
+    </div>  
     <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
 </body>
 </html>

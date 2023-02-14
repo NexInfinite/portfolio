@@ -8,11 +8,20 @@
 
 <!-- Main content -->
 {% block content %}
-    <header class="main-grid">
-        <div class="grid-item">
+    <div class="grid-row" id="landing">
+        <header class="grid-item">
             <h1>WELCOME</h1>
             <h2>I'm Julian</h2>
-            <i class="fa fa-caret-down icon-caret-down" onclick="on_carrot_pressed('what_i_do.html')"></i>  
-        </div>
-    </header>
+            <a href="#what-i-do"><i class="fa fa-caret-down icon-caret-down"></i></a>  
+        </header>
+    </div>
+
+
+    <div class="grid-row" id="what-i-do">
+        <header class="grid-item">
+            <h1>WHAT I DO</h1>
+            <h2>I am a Computer Science student studying at the University of Sheffield. I am a self taught programmer who works in Python, JavaScript, and Java. I have been writing python for almost 5 years and freelance backend API development in Flask. </h2>
+            <a href="#landing"><i class="fa fa-caret-down icon-caret-down"></i></a>  
+        </header>
+    </div>
 {% endblock %}

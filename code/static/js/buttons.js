@@ -1,3 +1,4 @@
-function on_carrot_pressed(page) {
-    console.log(page);
+function scrollToId(id) {
+    let element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth', block: 'end'});
 }
