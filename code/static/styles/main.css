@@ -34,7 +34,7 @@ body {
     display: inline-block;
     width: 100%;
 }
-.github { color: var(--secondary-main ); }
+a { color: var(--secondary-main ); }
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -105,3 +105,12 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
 #favourite-projects {grid-row: 3;}
 #whython {grid-column: 1;}
 #video-to-ascii {grid-column: 2;}
+
+/* Back to top */
+.back-to-top {
+    position: relative;
+    top: 0.2em;
+    right: 1em;
+    float: right; 
+    font-size: 2em;   
+}

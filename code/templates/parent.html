@@ -19,9 +19,17 @@
     {% block head %}
     {% endblock %}
 </head>
-<body onload="">
+<body>
+    <!-- 
+        MADE BY: Julian Jones.
+        Yes I made this all from scratch with html/css/js. No frameworks were used. No I do not hate myself.
+     -->
     <div class="main-grid">
-        <div id="particles-js"></div> 
+        <div id="particles-js">
+            <div class="back-to-top">
+                <a href="#landing"><i class="fa fa-angle-double-up icon-angle-double-up"></i></a>
+            </div>
+        </div> 
         {% block content %}
         {% endblock %}
     </div>  
