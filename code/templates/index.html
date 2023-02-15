@@ -12,6 +12,10 @@
         if (checkIfPhone()) {
             window.location.href = "{{ (url_for('phone.show')) }}";
         }
+
+        setTimeout(() => {
+            history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        }, 5)
     </script>
     {% include "components/landing.html" %}
     {% include "components/what-i-do.html" %}

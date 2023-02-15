@@ -13,4 +13,4 @@ if __name__ == "__main__":
     app.register_blueprint(phone)
 
     # Run app
-    app.run(debug=True)
+    app.run(port=2023, host="0.0.0.0")
