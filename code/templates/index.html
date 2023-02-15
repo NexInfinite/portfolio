@@ -8,6 +8,11 @@
 
 <!-- Main content -->
 {% block content %}
+    <script>
+        if (checkIfPhone()) {
+            window.location.href = "{{ (url_for('phone.show')) }}";
+        }
+    </script>
     {% include "components/landing.html" %}
     {% include "components/what-i-do.html" %}
     {% include "components/favourite-projects.html" %}

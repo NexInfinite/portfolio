@@ -6,3 +6,11 @@ function stopScrolling() {
         window.scrollTo(scrollLeft, scrollTop);
     };
 }
+
+function checkIfPhone() {
+    let isPhone = false;
+    if (window.innerWidth <= 768) {
+        isPhone = true;
+    }
+    return isPhone;
+}
