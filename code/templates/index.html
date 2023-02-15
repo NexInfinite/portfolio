@@ -8,83 +8,10 @@
 
 <!-- Main content -->
 {% block content %}
-    <div class="grid-row" id="landing">
-        <header class="grid-item">
-            <h1>WELCOME</h1>
-            <h2>I'm Julian</h2>
-            <a href="#what-i-do" onclick="showBackToTop()"><i class="fa fa-caret-down icon-caret-down"></i></a>  
-        </header>
-    </div>
-
-
-    <div class="grid-row" id="what-i-do">
-        <section class="grid-item">
-            <h1>WHAT I DO</h1>
-            <h2>I am a Computer Science student studying at the University of Sheffield. I am a self taught programmer who works in Python, JavaScript, and Java. I have been writing python for almost 5 years and freelance backend API development in Flask. </h2>  
-        </section>
-        <section class="grid-item">
-            <h1>TAKE A LOOK</h1>
-            <h2>Take a look at my favourite projects below</h2>
-            <a href="#favourite-projects"><i class="fa fa-caret-down icon-caret-down"></i></a>  
-        </section>
-    </div>
-
-    <div class="grid-row" id="favourite-projects">
-        <div class="projects-row">
-            <section class="project-item" id="whython">
-                <h1>WHYTHON&hairsp;<a class="github" href="https://github.com/nexinfinite/whython" target="_blank"><i class="fa fa-github"></i></a></h1>
-                <h2>Whython is an almost fully customizable language written in python, its syntax is based of Visual Basic. This is a project language written for fun which allows you to create your own language; from pseudocode syntax to emoji code, the choice is yours.</h2>  
-            </section>
-            <section class="project-item" id="video-to-ascii">
-                <h1>VIDEO TO ASCII&hairsp;<a class="github" href="https://github.com/nexinfinite/videotoascii" target="_blank"><i class="fa fa-github"></i></a></h1>
-                <h2>Video to ASCII was a project written over a weekend which takes a YouTube video and converts the output the ASCII art in a bash terminal in real time. It was written in Python and had some updates later on which pushed real time rendering of your monitor.</h2>  
-            </section>
-        </div>
-        <section class="grid-item" style="max-width: 100vw !important">
-            <h1>AWARDS AND COMPETITIONS</h1>
-            <h2>Take a look at competitions I've attended and awards I have won</h2>
-            <a href="#awards"><i class="fa fa-caret-down icon-caret-down"></i></a>  
-        </section>
-    </div>
-
-    <div class="grid-row" id="awards">
-        <div class="projects-row">
-            <section class="project-item" id="whython">
-                <h1>SHEFJAM 9 WINNERS&hairsp;<a class="github" href="https://github.com/shefjam9/Five-Nights-In-Newcastle" target="_blank"><i class="fa fa-github"></i></a></h1>
-                <h2>Shefjam is a competition ran by the Sheffield Computer Science Society. Its a 42 hour programming a event where we have to make a game based on a theme, this year being villains. Our team developed a PvE game where the player has to survive 5 Nights in Newcastle. One player tries to survive and another controls the environment to stop them from surviving. We won best game overall and best name.</h2>  
-            </section>
-            <section class="project-item" id="video-to-ascii">
-                <h1>PROJECT FALCON&hairsp;<a class="github" href="https://www.projectfalcon.uk" target="_blank"><i class="fa fa-rocket"></i></a></h1>
-                <h2>Project Falcon is a Sheffield student lead project for IMechE. This is a competition where students have to build and fly an autonomous drone through a track. We will be competing in IMechE 2023 and I will be responsible for helping create the autonomous side of the drone. I am part of the missions engineering team, which is a team consisting of 5 Sheffield students from many different courses.</h2>  
-            </section>
-        </div>
-        <section class="grid-item" style="max-width: 100vw !important">
-            <h1>PREVIOUS WORK EXPERIENCE</h1>
-            <h2>Take a look at my past and current jobs</h2>
-            <a href="#work"><i class="fa fa-caret-down icon-caret-down"></i></a>  
-        </section>
-    </div>
-
-    <div class="grid-row" id="work">
-        <div class="projects-row">
-            <section class="project-item" id="whython">
-                <h1>STREETS SYSTEMS</i></a></h1>
-                <h2>Streets systems is a company based out of Newcastle that aims to use their own devices to track people coming in and out of a “gate”. These gates are tracked with cameras and then the information about the gates is relayed to my backend API. My job was to create a dashboard and backend API for customers and admins to track information. This was written in Python and Flask.</h2>  
-            </section>
-            <section class="project-item" id="video-to-ascii">
-                <h1>VARSITY TUTORS&hairsp;<a class="github" href="https://www.varsitytutors.com/" target="_blank"><i class="fa fa-rocket"></i></a></h1>
-                <h2>Varsity Tutors is an American company that runs worldwide. It is a platform that allows tutors to be matched with clients, and has a great tutoring platform to allow tutors to teach interactively. I tutor python and A Level OCR Computer Science to a couple students. This is my current job.</h2>  
-            </section>
-        </div>
-        <section class="grid-item" style="max-width: 100vw !important">
-            <h1>CONTACT ME</h1>
-            <h2>Want to freelance me? Contact me below! You can also see my social media below.</h2>
-            <a href="#landing"><i class="fa fa-caret-down icon-caret-down"></i></a>  
-        </section>
-    </div>
-
-
-    <div class="back-to-top" id="back-to-top" hidden>
-        <a href="#landing" onclick="hideBackToTop()"><i class="fa fa-angle-double-up"></i></a>
-    </div>
+    {% include "components/landing.html" %}
+    {% include "components/what-i-do.html" %}
+    {% include "components/favourite-projects.html" %}
+    {% include "components/awards.html" %}
+    {% include "components/work.html" %}
+    {% include "components/back-to-top.html" %}
 {% endblock %}
