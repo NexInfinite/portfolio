@@ -86,6 +86,11 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
     align-content: center;
 }
 .grid-item { max-width: 70vw; }
+#landing {grid-row: 1;}
+#what-i-do {grid-row: 2;}
+#favourite-projects {grid-row: 3;}
+#whython {grid-column: 1;}
+#video-to-ascii {grid-column: 2;}
 
 /* Project row */
 .projects-row {
@@ -95,13 +100,38 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
     justify-content: center;
     align-content: center;
 }
-.project-item { max-width: 40vw; margin: 0 4em 0 4em;}
+.project-item { max-width: 40vw; margin: 0 4em;}
 
-#landing {grid-row: 1;}
-#what-i-do {grid-row: 2;}
-#favourite-projects {grid-row: 3;}
-#whython {grid-column: 1;}
-#video-to-ascii {grid-column: 2;}
+/* Button grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+}
+.button-item { margin: 0.3em 1em; }
+button {
+    background-color: var(--secondary-bg-color);
+    border-radius: 0.4em;
+    text-align: center;
+    border: none;
+    transition: box-shadow var(--transition-duration) ease-in-out;
+    width: 15em;
+}
+button a {
+    color: var(--main) !important;
+    font-size: 1.75em;
+    font-weight: var(--font-weight-bold); 
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2em 0.5em;  
+}
+button a .smaller-font { font-size: 1em !important; }
+button:hover {
+    box-shadow: 0.3em 0.4em var(--secondary-main);
+    cursor: pointer;
+}
 
 /* Back to top */
 .back-to-top {  
@@ -114,3 +144,21 @@ section h2 { color: var(--accent); font-weight: var(--font-weight-light); font-s
     transition: color var(--transition-duration) ease-in-out; 
 }
 .back-to-top a:hover { color: var(--main); cursor: pointer; }
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: -5em;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    background-color: var(--secondary-bg-color);
+    color: var(--main);
+    text-align: center;
+    font-size: 0.75em;
+    display: grid;
+    align-content: center;
+    z-index: 1;
+    transition: bottom var(--transition-duration) ease-in-out;
+}
+footer .footer-text { font-weight: var(--font-weight-light); }
