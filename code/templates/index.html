@@ -8,6 +8,7 @@
 
 <!-- Main content -->
 {% block content %}
+    <!-- Yes, I did write this all in pure HTML/CSS/JS (bar particles.js). No, I do not hate myself. -->
     <script>
         if (checkIfPhone()) {
             window.location.href = "{{ (url_for('phone.show')) }}";
@@ -24,7 +25,7 @@
     {% include "components/favourite-projects.html" %}
     {% include "components/awards.html" %}
     {% include "components/work.html" %}
-    {% include "components/my-skills.html" %"}
+    <!-- {% include "components/my-skills.html" %"} -->
     {% include "components/contact.html" %}
     {% include "components/back-to-top.html" %}
 {% endblock %}
