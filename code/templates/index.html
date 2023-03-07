@@ -8,7 +8,6 @@
 
 <!-- Main content -->
 {% block content %}
-    <!-- Yes, I did write this all in pure HTML/CSS/JS (bar particles.js). No, I do not hate myself. -->
     <script>
         if (checkIfPhone()) {
             window.location.href = "{{ (url_for('phone.show')) }}";
