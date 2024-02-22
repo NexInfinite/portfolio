@@ -1,4 +1,6 @@
 # Portfolio 2023 Update
 This was written in early 2023 and is currently under redvelopment. I am creating a new branch so that the older version can be kept for future usage. This was a really fun project and I loved the challenge of trying to everything work in only HTML/Javascript/CSS. I am going to be moving to nextjs to make future development easier (and maybe implement a future API?) and so this repo is going to undergo a lot of changes.
 
+Over the last year I have done a lot more compsci related things. I undertook missions lead on project falcon, we won the ShefJamX, we competed in HackSheffield9, project Falcon started work on FLA and FGCS, I started undertaking a year in industry, I started work on BetterFantasy, and a lot more. Due to this I felt like I want to represent my skills better by reworking the website and making it mobile friendly, I want people to see what me and people around me have done and so my portfolio is the best way to showcase everything. I am incredibly proud of everything I've done and everything project Falcon has acheived so far and so this redesign means a lot to me (i am very excited). Hopefully it works as well as i invision it.
+
 Thanks for reading <3
