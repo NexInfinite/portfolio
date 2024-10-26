@@ -1,34 +1,22 @@
 <script>
-  import ParticlesComponent from "$lib/Particles.svelte";
-  import DownCaret from "$lib/DownCaret.svelte";
+  import ParticlesComponent from "$lib/components/Particles.svelte";
+  import DownCaret from "$lib/components/DownCaret.svelte";
+  import Welcome from "$lib/screens/Welcome.svelte";
+  import WhatIDo from "$lib/screens/WhatIDo.svelte";
+  import { path } from "$lib/components/Path.svelte";
 </script>
 
 <ParticlesComponent />
 
-<div class="overflow-x-hidden">
-  <div class="z-10 relative h-screen w-screen flex items-center justify-center">
-    <div class="flex-col font-display text-center">
-      <div class="font-black text-primary text-5xl md:pb-2">
-        WELCOME
-      </div>
-      <div class="font-thin text-main text-2xl">
-        I'm Julian
-      </div>
-  
-      <DownCaret />
+{#if path != ""}
+  <div class="sticky w-scren z-20 top-0 overflow-hidden">
+    <div class="flex flex-row w-screen justify-center">
+      <DownCaret url="" up={true} />
     </div>
   </div>
+{/if}
 
-  <div id="2" class="z-10 relative h-screen w-screen flex items-center justify-center">
-    <div class="flex-col font-display text-center">
-      <div class="font-black text-primary text-5xl md:pb-2">
-        WELCOME
-      </div>
-      <div class="font-thin text-main text-2xl">
-        I'm Julian
-      </div>
-  
-      <DownCaret />
-    </div>
-  </div>
+<div class="overflow-x-hidden">
+  <Welcome />
+  <WhatIDo />
 </div>
